@@ -120,14 +120,6 @@ img {
   max-width: 100%; /* Lebar maksimum daftar restoran */
 }
 
-.restaurant {
-  width: calc(30% - 35px); /* Setiap restoran akan menempati 50% lebar container */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 30px;
-  background: white;
-}
-
 /* Style for RestaurantItem */
 .restaurant-item {
   width: calc(30% - 35px);
@@ -199,89 +191,123 @@ img {
   text-align: left;
 }
 
-/* Style for RestaurantDetail */
-.restaurant__title {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #333;
-  text-decoration: none;
+/* detail restaurant */
+.restaurant {
+  width: calc(60% - 35px);
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  background-color: rgb(14, 107, 212);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Restaurant title */
+.restaurant__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Restaurant poster image */
 .restaurant__poster {
   display: block;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 400px;
-  height: auto;
+  margin-top: 2rem;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
+/* Information section */
 .restaurant__info {
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .restaurant__info h3 {
   margin-bottom: 10px;
-  font-size: 24px;
-  color: #333;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.restaurant__info h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .restaurant__info p {
-  margin: 5px 0;
-  color: #666;
-  font-size: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
 }
 
+/* Description section */
 .restaurant__description {
   margin-bottom: 20px;
 }
 
 .restaurant__description h3 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 .restaurant__description p {
-  color: #666;
+  color: #ffffff;
   line-height: 1.5;
+  font-size: 1rem;
+  text-align: justify;
 }
 
+/* Menus section */
 .restaurant__menus {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .restaurant__menus h3 {
   margin-bottom: 10px;
-  font-size: 24px;
-  color: #333;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 .restaurant__menus h4 {
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #555;
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .restaurant__menus ul {
-  list-style-type: none;
+  list-style: none;
+  margin-top: 0px;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .restaurant__menus ul li {
   margin-bottom: 5px;
-  color: #666;
+  font-size: 1.3rem;
+  color: #ffffff;
+  flex-basis: calc(50% - 5px);
 }
 
+/* Reviews section */
 .restaurant__reviews {
   margin-bottom: 20px;
 }
 
 .restaurant__reviews h3 {
   margin-bottom: 10px;
-  font-size: 24px;
-  color: #333;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 .review {
@@ -292,28 +318,22 @@ img {
 
 .review h4 {
   margin: 0;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
 
 .review p {
   margin: 5px 0;
-  color: #666;
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 .review small {
-  color: #888;
+  color: #ffffff;
 }
 
-/* Kode lainnya disembunyikan... */
-.movie .movie__info h4 {
-  margin: 8px 0;
-}
- 
-/*
-  Like
-*/
+/* Like button */
 .like {
   width: 55px;
   height: 55px;
@@ -321,18 +341,22 @@ img {
   align-items: center;
   justify-content: center;
   background-color: #db0000;
-  
   position: fixed;
   bottom: 16px;
   right: 16px;
   border-radius: 50%;
   border: 0;
-  
   font-size: 18px;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+.like:hover {
+  background-color: #c20000;
+}
+
+/* Footer */
 .footer {
   text-align: center;
   margin-top: 10rem;
@@ -340,3 +364,4 @@ img {
   color: white;
   padding: 2rem;
 }
+

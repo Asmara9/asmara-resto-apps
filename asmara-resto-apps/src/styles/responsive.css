@@ -72,7 +72,7 @@
   }
   
   
-  /* Responsive Styles */
+  /* Responsive Styles Restaurant List */
   @media screen and (max-width: 1024px) {
       .restaurant-item {
         width: calc(50% - 20px);
@@ -121,3 +121,45 @@
         font-size: 0.9rem;
       }
     }
+
+/* Detail Restaurant */
+@media screen and (max-width: 768px) {
+  .restaurant {
+    width: 85%;
+    object-fit: cover;
+    margin-top: 5px;
+  }
+
+  .restaurant__poster {
+    width: 100%;
+    max-height: 200px;
+    margin-top: 5px;
+  }
+
+  .restaurant__title {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+  
+  .restaurant__info h3,
+  .restaurant__menus h3,
+  .restaurant__reviews h3 {
+    font-size: 1.5rem;
+  }
+  
+  .restaurant__info h4,
+  .restaurant__menus h4 {
+    font-size: 1.3rem;
+  }
+  
+  .restaurant__info p,
+  .restaurant__description p,
+  .restaurant__menus ul li,
+  .review p {
+    font-size: 1rem;
+  }
+
+  .review h4 {
+    font-size: 1.3rem;
+  }
+}
